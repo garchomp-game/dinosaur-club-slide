@@ -1,5 +1,4 @@
-import React from 'react';
-import { Slide, Heading, Text, UnorderedList, ListItem, Grid, Box, Image } from 'spectacle';
+import { Slide, Heading, Text, UnorderedList, ListItem, Grid, Box } from 'spectacle';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 // ヒーローアイコンをラップするコンポーネント
@@ -39,7 +38,7 @@ const Slides = [
         <Box>
           <Heading fontSize="h3">恐竜クラブの現状</Heading>
           <UnorderedList>
-            <ListItem>会員数：約50名</ListItem>
+            <ListItem>会員数：約500名</ListItem>
             <ListItem>活動頻度：月2回の定例会</ListItem>
             <ListItem>主な活動：恐竜に関する講演会、博物館見学など</ListItem>
             <ListItem>情報発信手段：紙のお便りが中心</ListItem>
@@ -98,31 +97,6 @@ const Slides = [
         <div className="feature-item"><Check />会員募集の効率化（問い合わせフォームの活用）</div>
         <div className="feature-item"><Check />過去の活動アーカイブの作成</div>
       </div>
-    </div>
-  </Slide>,
-
-  // スライド7: 成功事例
-  <Slide>
-    <div className="slide-content">
-      <Heading fontSize="h2">成功事例</Heading>
-      <Grid gridTemplateColumns="1fr 1fr" gridGap={2}>
-        <Box>
-          <Heading fontSize="h3">A自然観察クラブ</Heading>
-          <div className="feature-list">
-            <div className="feature-item"><Check />サイト開設後1年で会員数20%増加</div>
-            <div className="feature-item"><Check />月間問い合わせ数：5件→15件</div>
-            <div className="feature-item"><Check />活動報告のデジタルアーカイブ化</div>
-          </div>
-        </Box>
-        <Box>
-          <Heading fontSize="h3">B古生物研究会</Heading>
-          <div className="feature-list">
-            <div className="feature-item"><Check />若年層の会員が30%増加</div>
-            <div className="feature-item"><Check />イベント参加者が2倍に</div>
-            <div className="feature-item"><Check />他団体との連携機会が増加</div>
-          </div>
-        </Box>
-      </Grid>
     </div>
   </Slide>,
 
@@ -482,12 +456,23 @@ const Slides = [
     <div className="slide-content text-center">
       <Heading fontSize="h1">ご質問・ご相談</Heading>
       <Text fontSize="24px" margin="2rem 0">ご不明点やご質問がございましたらお気軽にどうぞ</Text>
-      <Text fontSize="20px" margin="1rem 0">
-        担当：おとか<br />
-        連絡先：otoka.japanesedrum@gmail.com
-      </Text>
+      <Grid gridTemplateColumns="1fr 1fr" gridGap={2}>
+        <Box>
+          <Text fontSize="20px" margin="1rem 0">
+            担当：おとか<br />
+            連絡先：otoka.japanesedrum@gmail.com
+          </Text>
+        </Box>
+        <Box>
+          <Text fontSize="20px" margin="1rem 0">
+            担当：いむラプトル<br />
+            連絡先：
+          </Text>：megadragonaya1126@gmail.com
+        </Box>
+      </Grid>
     </div>
   </Slide>
+// ...existing code...
 ];
 
 export default Slides;

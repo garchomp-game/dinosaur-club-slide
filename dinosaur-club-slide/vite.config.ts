@@ -11,9 +11,9 @@ export default defineConfig({
       '@': resolve(__dirname, './src')
     }
   },
-  // デバッグ用にビルドログを詳細に出力
+  // terserの代わりにesbuildを使用
   build: {
-    minify: 'terser',
+    minify: 'esbuild', // 'terser'から'esbuild'に変更
     sourcemap: true,
   },
   // 開発サーバーの設定

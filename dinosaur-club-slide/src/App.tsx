@@ -1,4 +1,3 @@
-import React from 'react';
 import { Deck, FlexBox, Box } from 'spectacle';
 import Slides from './Slides';
 
