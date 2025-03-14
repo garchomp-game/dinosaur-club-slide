@@ -39,14 +39,16 @@ const Slides = [
           <Heading fontSize="h3">恐竜クラブの現状</Heading>
           <UnorderedList>
             <ListItem>会員数：約500名</ListItem>
-            <ListItem>活動頻度：月2回の定例会</ListItem>
-            <ListItem>主な活動：恐竜に関する講演会、博物館見学など</ListItem>
-            <ListItem>情報発信手段：紙のお便りが中心</ListItem>
+            <ListItem>主な活動：恐竜に関する講演会、情報交換など</ListItem>
+            <ListItem>情報発信手段：facebookなどが主</ListItem>
+            <ListItem>現在Wixで作成したサイトあり（リプレイス検討中）</ListItem>
           </UnorderedList>
         </Box>
         <Box>
           <Heading fontSize="h3">主な課題</Heading>
           <div className="feature-list">
+            <div className="feature-item"><Check />現行Wixサイトの管理・更新の難しさ</div>
+            <div className="feature-item"><Check />カスタマイズ性と拡張性の制限</div>
             <div className="feature-item"><Check />情報発信の遅れ</div>
             <div className="feature-item"><Check />新規会員獲得の機会損失</div>
             <div className="feature-item"><Check />活動記録の散逸</div>
@@ -472,7 +474,6 @@ const Slides = [
       </Grid>
     </div>
   </Slide>
-// ...existing code...
 ];
 
 export default Slides;
